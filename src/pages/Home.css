@@ -1,0 +1,250 @@
+/* -------------------- Container & Page -------------------- */
+.home_container {
+  max-width: 900px; /* wider to fit left-right layout */
+  margin: 100px auto 50px; /* space for navbar */
+  padding: 20px;
+  font-family: "Helvetica Neue", sans-serif;
+  text-align: center;
+}
+
+/* Page title */
+.home_page-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+}
+
+/* -------------------- Top Navigation Bar -------------------- */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+/* Logo in navbar */
+.nav-logo {
+  height: 35px;
+  width: auto;
+  padding-top: 10px;
+}
+
+/* -------------------- Logout Button -------------------- */
+.nav-logout {
+  padding: 6px 12px;
+  background-color: #7e92fd;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.nav-logout:hover {
+  background-color: #7a86e1;
+}
+
+/* -------------------- Left + Right Flex Container -------------------- */
+.geo-track-container {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap; /* stacks on mobile */
+  text-align: left;
+}
+
+/* Left side: instructions + search */
+.geo-left {
+  flex: 1 1 350px;
+}
+
+/* Right side: IP info */
+.geo-right {
+  flex: 1 1 350px;
+}
+
+/* Instructions text */
+.geo-instructions {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.geo-enter-ip {
+  color: #424d86;
+}
+
+/* -------------------- Search Form (inside left) -------------------- */
+.geo-left .search-form {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.geo-left .search-input {
+  flex: 1;
+}
+
+.search-input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 0.8rem;
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+.search-btn {
+  background-color: #424d86;
+  border-radius: 20px;
+}
+
+.search-btn:hover {
+  background-color: #778dff;
+}
+
+/* -------------------- Geo Info Card -------------------- */
+.geo-card {
+  background: #f8f9fa;
+  padding: 15px 35px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 0;
+  transition: transform 0.2s ease;
+}
+
+.geo-card:hover {
+  transform: translateY(-5px);
+}
+
+.geo-card p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+}
+
+.geo-card strong {
+  color: #333;
+}
+
+/* Placeholder for empty IP card */
+.geo-card.placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-style: italic;
+  height: 220px;
+}
+
+/* -------------------- Error Message -------------------- */
+.error-msg {
+  color: #e74c3c;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* -------------------- Search History -------------------- */
+.history-section {
+  text-align: left;
+}
+
+.history-section h4 {
+  color: #1a1a1a;
+}
+
+.delete-btn {
+  padding: 10px 15px;
+  background-color: white;
+  color:#424d86;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-size: 0.9rem;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+  color: white;
+
+}
+.history-list {
+  border: none;
+  padding: 10px;
+  background-color: none;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  transition: background 0.2s;
+}
+
+/* Make checkbox white */
+.history-item input[type="checkbox"] {
+  accent-color: white;
+  margin-right: 8px;
+}
+
+.history-ip {
+  cursor: pointer;
+  margin-left: 8px;
+  color: #424d86;
+  transition: color 0.2s;
+}
+
+.history-ip:hover {
+  color: white;
+}
+
+/* -------------------- Map Container -------------------- */
+.map-container {
+  margin: 10px 0px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* -------------------- Responsive -------------------- */
+@media (max-width: 768px) {
+  .geo-track-container {
+    flex-direction: column;
+  }
+
+  .geo-left,
+  .geo-right {
+    flex: 1 1 100%;
+  }
+
+  .geo-left .search-form {
+    flex-direction: row; /* keep input + buttons in a row */
+    gap: 10px;           
+    flex-wrap: wrap;    
+  }
+  
+  .search-input {
+    flex: 1 1 auto;      /* input takes remaining space */
+    min-width: 150px;   
+
+  .search-btn,
+  .clear-btn {
+    flex: 0 0 auto;      /* buttons keep their natural size */
+  }
+
+  .map-container {
+    height: 250px;
+  }
+}
+}
