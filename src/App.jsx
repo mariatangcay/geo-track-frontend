@@ -24,6 +24,8 @@ function App() {
             </PrivateRoute>
           }
         />
+        {/* Catch-all */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   );

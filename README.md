@@ -39,13 +39,16 @@ It features user authentication, protected routes, IP search history, and intera
 
 ## 🧪 Test Account
 
-Use the following credentials to log in:
+## 👤 User Seeder
 
-Email: test@example.com
-Password: password123
+The backend uses an in-memory user seeder for authentication testing. Use the following credentials to log in:
 
+Seeded User:
+- Email: test@example.com
+- Password: password123
 
----
+This user is automatically available when the API starts and is used to validate login credentials.
+
 
 ## ⚙️ Setup Instructions
 

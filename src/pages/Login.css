@@ -29,6 +29,11 @@
   padding: 2rem;
 }
 
+.login-left img {
+  max-width: 300px;
+  height: auto;
+}
+
 .login-logo {
   width: 300px;   
   height: auto;

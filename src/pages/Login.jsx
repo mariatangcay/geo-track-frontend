@@ -3,6 +3,9 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "../App.css";
 import "./Login.css"; 
+import logo from "../assets/GeoTrack_logo.svg";
+import phone from "../assets/GeoTrack_phone.svg";
+
 
 
 export default function Login() {
@@ -10,6 +13,8 @@ export default function Login() {
   const [password, setPassword] = useState(""); 
   const [error, setError] = useState("");       
   const navigate = useNavigate();
+  const API_URL = import.meta.env.VITE_API_URL;
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,9 +22,9 @@ export default function Login() {
 
     try {
       const res = await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/login`,
+        `${API_URL}/api/login`, 
         { email, password }
-      );
+      )
       localStorage.setItem("token", res.data.token);
       navigate("/home");
     } catch (err) {
@@ -36,18 +41,9 @@ export default function Login() {
       {/* Left side */}
       <div className="login-left">
         {/* Logo */}
-      <img
-        src="src/assets/GeoTrack_logo.svg"
-        alt="GeoTrack logo"
-        className="login-logo"
-      />
-
+      <img src={logo} alt="GeoTrack Logo" className="login-logo" />
       {/* Phone illustration */}
-      <img
-        src="src/assets/GeoTrack_phone.svg"
-        alt="GeoTrack phone"
-        className="login-phone"
-      />
+      <img src={phone} alt="GeoTrack Phone" className="login-phone" />
         <p>Discover and track IP locations instantly. Stay on top of your searches and discover insights in no time.</p>
   
       </div>
