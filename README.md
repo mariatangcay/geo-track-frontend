@@ -54,58 +54,51 @@ No registration is required; the same credentials work in all deployments.
 ## 1. Clone the Repository
 
 ### Frontend
-  git clone https://github.com/mariatangcay/geo-track-frontend.git
-  
-  cd geo-track-frontend   
+- git clone https://github.com/mariatangcay/geo-track-frontend.git
+- cd geo-track-frontend   
 
 ### Backend
-  git clone https://github.com/mariatangcay/geo-track-backend.git
-
-  cd geo-track-backend
+- git clone https://github.com/mariatangcay/geo-track-backend.git
+- cd geo-track-backend
 
 ---
 
 ## 2. Install Dependencies
 
 ### Frontend
-  cd frontend
-
-  npm install
+- cd frontend
+- npm install
 
 
 ### Backend
-  cd backend
-
-  npm install
+- cd backend
+- npm install
 
 ---
 
 ## 3. Environment Variables
 
 ### Frontend .env (at root of frontend project):
-  VITE_API_URL=https://geo-track-backend.vercel.app
+- VITE_API_URL=https://geo-track-backend.vercel.app
 
 ### Backend .env (at root of backend project):
-  PORT=8000
-
-  JWT_SECRET=supersecretkey
+- PORT=8000
+- JWT_SECRET=supersecretkey
 
 ---
 
 ## 4. Run Locally
 
 ### Backend
-  cd backend
-
-  node api/index.js
+- cd backend
+- node api/index.js
 
 ### Frontend
-  cd frontend
+- cd frontend
+- npm run dev
 
-  npm run dev
-
-  🔹 Frontend will run on http://localhost:5173 (default Vite port).
-  🔹 Login with seeded user (test@example.com / password123) to test the app locally.
+- 🔹 Frontend will run on http://localhost:5173 (default Vite port).
+- 🔹 Login with seeded user (test@example.com / password123) to test the app locally.
 
 ---
 
@@ -119,8 +112,8 @@ https://geo-track-backend.vercel.app
 ### Frontend:
 https://geo-track-frontend-zeta.vercel.app
 
-  🔹 Frontend automatically calls the backend API via the VITE_API_URL environment variable.
-  🔹 SPA routing is configured via vercel.json to prevent 404 on page refresh.
+- 🔹 Frontend automatically calls the backend API via the VITE_API_URL environment variable.
+- 🔹 SPA routing is configured via vercel.json to prevent 404 on page refresh.
 
 ---
 
