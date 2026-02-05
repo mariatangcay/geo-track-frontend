@@ -53,11 +53,14 @@ No registration is required; the same credentials work in all deployments.
 
 ## 1. Clone the Repository
 
-### Frontend
+Frontend
+
   git clone https://github.com/mariatangcay/geo-track-frontend.git
   cd geo-track-frontend   
+
   
-### Backend
+Backend
+
   git clone https://github.com/mariatangcay/geo-track-backend.git
   cd geo-track-backend
 
@@ -65,12 +68,14 @@ No registration is required; the same credentials work in all deployments.
 
 ## 2. Install Dependencies
 
-### Frontend
+Frontend
+
   cd frontend
   npm install
 
 
-### Backend
+Backend
+
   cd backend
   npm install
 
@@ -78,10 +83,13 @@ No registration is required; the same credentials work in all deployments.
 
 ## 3. Environment Variables
 
-### Frontend .env (at root of frontend project):
+Frontend .env (at root of frontend project):
+
   VITE_API_URL=https://geo-track-backend.vercel.app
 
-### Backend .env (at root of backend project):
+
+Backend .env (at root of backend project):
+
   PORT=8000
   JWT_SECRET=supersecretkey
 
@@ -89,11 +97,13 @@ No registration is required; the same credentials work in all deployments.
 
 ## 4. Run Locally
 
-### Backend
+Backend
+
   cd backend
   node api/index.js
 
-### Frontend
+Frontend
+
   cd frontend
   npm run dev
 
@@ -106,10 +116,12 @@ No registration is required; the same credentials work in all deployments.
 
 The app is deployed serverless on Vercel:
 
-### Backend:
+Backend
+
 https://geo-track-backend.vercel.app
 
-### Frontend:
+Frontend
+
 https://geo-track-frontend-zeta.vercel.app
 
   🔹 Frontend automatically calls the backend API via the VITE_API_URL environment variable.
