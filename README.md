@@ -119,7 +119,7 @@ https://geo-track-frontend-zeta.vercel.app
 
 ## 6. Usage
 
-1. Open the frontend URL.
+1. Open the frontend URL. https://geo-track-frontend-zeta.vercel.app
 2. Log in with the seeded user credentials.
 3. Your IP’s geolocation will display immediately.
 4. Enter any valid IPv4 address to see its location and details.
