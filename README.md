@@ -55,10 +55,12 @@ No registration is required; the same credentials work in all deployments.
 
 ### Frontend
   git clone https://github.com/mariatangcay/geo-track-frontend.git
-  cd geo-track-frontend   
   
+  cd geo-track-frontend   
+
 ### Backend
   git clone https://github.com/mariatangcay/geo-track-backend.git
+
   cd geo-track-backend
 
 ---
@@ -67,11 +69,13 @@ No registration is required; the same credentials work in all deployments.
 
 ### Frontend
   cd frontend
+
   npm install
 
 
 ### Backend
   cd backend
+
   npm install
 
 ---
@@ -83,6 +87,7 @@ No registration is required; the same credentials work in all deployments.
 
 ### Backend .env (at root of backend project):
   PORT=8000
+
   JWT_SECRET=supersecretkey
 
 ---
@@ -91,10 +96,12 @@ No registration is required; the same credentials work in all deployments.
 
 ### Backend
   cd backend
+
   node api/index.js
 
 ### Frontend
   cd frontend
+
   npm run dev
 
   🔹 Frontend will run on http://localhost:5173 (default Vite port).
