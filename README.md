@@ -56,7 +56,7 @@ No registration is required; the same credentials work in all deployments.
 Frontend
 
   git clone https://github.com/mariatangcay/geo-track-frontend.git
-  cd geo-track-frontend   
+ \n cd geo-track-frontend   
 
   
 Backend
